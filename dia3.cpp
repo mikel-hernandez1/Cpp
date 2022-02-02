@@ -15,7 +15,7 @@ int num_Menor(int num, int numMen){
 
 int pide_Numeros(){
 	int numero;
-	cout << "Introduce un numero: ";
+	cout << "Introduzca un numero: ";
 	cin >> numero;
 	return numero;
 }
@@ -32,8 +32,8 @@ void clasifica_Numeros(int salida){
 	int total = 0;
 	int cont = 0;
 	int media;
-	cout << "Introduce -1 para terminar" << endl;
-	num = pideNumeros();
+	cout << "Introduzca -1 para terminar por favor" << endl;
+	num = pide_Numeros();
 	do{
 		mayor = num_Mayor (num, mayor);
 		menor = num_Menor (num, menor);
@@ -88,29 +88,29 @@ int main() {
 	int descuento = 100;
 
 
-	for (int i = 0; i < numeros; i++){
-		arrayNumeros [i] = i;
+	for (int c = 0; c < numeros; c++){
+		arrayNumeros [c] = c;
 	}
 
-	for (int j = 0; j < numeros; j+=4){
-		suma = arrayNumeros[j]+arrayNumeros[j+1]+arrayNumeros[j+2]+arrayNumeros[j+3];
+	for (int z = 0; z < numeros; z+=4){
+		suma = arrayNumeros[z]+arrayNumeros[z+1]+arrayNumeros[z+2]+arrayNumeros[z+3];
 		arraySuma[cont] = suma;
 		cont++;
 	}
 
-	for (int k = 0; k < numeros/salto; k++){
-		cout << arraySuma[k] << endl;
+	for (int p = 0; p < numeros/salto; p++){
+		cout << arraySuma[p] << endl;
 	}
 
 //-----------------------------------------------------------
   
 	// EJERCICIO 1.
-	string contrasegna;
+	string contrasenia;
 	string entrada;
-	cout << "Introduce la nueva contrasegna: " << endl;
-	cin >> contrasegna;
-	while (entrada != contrasegna){
-		cout << "Introduce contrasegna: ";
+	cout << "Introduzca la nueva contrasenia: " << endl;
+	cin >> contrasenia;
+	while (entrada != contrasenia){
+		cout << "Introduzca contrasenia: ";
 		cin >> entrada;
 }
 
@@ -118,12 +118,12 @@ int main() {
 	// EJERCICIO 2.
 	int edad;
 	int mayor = 18;
-	string respuesta = "Te quedan colacaos";
+	string respuesta = "No te preocupes bro, el año que viene.";
 
-	cout << "Introduce tu edad actual: ";
+	cout << "Introduzca su edad actual: ";
 	cin >> edad;
 	if (edad >= mayor){
-		respuesta = "Eres mayor de edad... pero te quedan colacaos";
+		respuesta = "Eres mayor de edad. Enhorabuena crack, hazte un porro.";
 	}
 	cout << respuesta << endl;
 
@@ -132,7 +132,7 @@ int main() {
 	// EJERCICIO 3.
 	float nota;
 	string calificacion;
-	cout << "Introduce tu nota con dos decimales: ";
+	cout << "Introduzca su nota con dos decimales: ";
 	cin >> nota;
 	if (nota < 5.00){
 		calificacion = "SUSPENSO!";
@@ -155,7 +155,7 @@ int main() {
 	// EJERCICIO 4
 	int numeroParOImpar;
 
-	cout << "Introduce un numero entero: ";
+	cout << "Introduzca un numero entero: ";
 	cin >> numeroParOImpar;
 	if (numeroParOImpar % 2 == 0){
 		cout << "El número es Par" << endl;
@@ -173,26 +173,26 @@ int main() {
 	int max = 20;
 	int l = 0;
 
-	for (int c = 0; c < max; i++){
+	for (int c = 0; c < max; c++){
 		cout << "Introduzca una lista de números: ";
-		cin >> miArray[i];
+		cin >> miArray[c];
 	}
 
 	cout << " Este es mi array: ";
-	for (int z = 0; z < max; j++){
-		cout << miArray[j] << ", ";
+	for (int z = 0; z < max; z++){
+		cout << miArray[z] << ", ";
 	}
 
-	for (int p = 0; p < max; k++){
+	for (int p = 0; p < max; p++){
 		if (miArray[p] % 2 == 0){
 			arrayPares[l] = miArray[p];
 			l+=1;
 		}
 	}
 
-		cout << endl << " este es el array de numeros pares: ";
-		for (int u = 0; m < l; m++){
-			cout << arrayPares[m] << ", ";
+		cout << endl << "Array de numeros pares: ";
+		for (int u = 0; l < u; u++){
+			cout << arrayPares[u] << ", ";
 		}
 
 	cout << endl;
@@ -213,7 +213,7 @@ int main() {
 	numero = pide_Numeros();
 	resultado = suma_Potencias(numero);
 	cout << endl;
-	cout << "2^1 + 2^2 + ... + 2^n = " << resultado << endl;
+	cout << "2^1 + 2^2 +...+ 2^n = " << resultado << endl;
 
 //-----------------------------------------------------------
   
