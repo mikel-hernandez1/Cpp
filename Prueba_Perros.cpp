@@ -73,7 +73,7 @@ int main() {
   string listaPulpos[] = {"A" , "B", "C", "D", "E"};
   char listaFaltas[tamaLista];
 
-  cout << "Celia Pedregosa" << endl;
+  cout << "Mikel Hernández Alonso" << endl;
 // Dar de comer al pulpo.
   solicitarContrasena(contrasena);
 // Pasar número a base8.
