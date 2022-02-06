@@ -24,8 +24,6 @@ void Array(int array[], int tam){
 	cout << array[tam - 1] << "]" << endl;
 }
 
-
-
 int main() {
 
 	int arrayMas5 [10];
@@ -33,19 +31,18 @@ int main() {
 	int tama = 10;
 	int arrayPruebas[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
-	//-----------------------EJERCICIO 1-------------------------------------------------------
+//-----------------------EJERCICIO 1----------------------------
 
 	string nombre = "Mikel Hernández Alonso.";
 	cout << endl << nombre << endl;
 
-	//-----------------------EJERCICIO 2-------------------------------------------------------
+//-----------------------EJERCICIO 2-----------------------------
 
-	//printArray (arrayPruebas, tama);
+//printArray (arrayPruebas, tama);
 
-
-	rellena(array, tama);   		//	2.1
+	rellena(array, tama);   		// EJERCICIO 2.1
 	//printArray(arrayMas5, tama);
-	rellena2(array, tama);			//	2.2
+	rellena2(array, tama);			// EJERCICIO 2.2
 	//printArray(arrayBin, tama);
 	
 	return 0;
